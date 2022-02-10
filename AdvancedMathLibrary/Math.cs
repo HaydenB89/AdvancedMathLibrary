@@ -3,6 +3,10 @@
 namespace AdvancedMathLibrary {
 
     public static class Math {
+
+        public static int AbsoluteValue(int a) { //abs vals only have one parameter
+            return (a < 0) ? -a : a;
+        }
         public static int Add(int a, int b) {
             return a + b;
         }
