@@ -68,7 +68,7 @@ namespace TestAdvMathLibrary {
 
         [Fact]
         public void TestDivideByZero() {
-            System.Action ZeroDenominator = () => Math.Div(1, 0);           //calling from the MathLib System then naming the Div method 'ZeroDenominator'
+            System.Action ZeroDenominator = () => Math.Div(1, 0);           //calling from the MathLib using System then naming the Div method 'ZeroDenominator'
             Assert.Throws<System.DivideByZeroException>(ZeroDenominator);   //throw an exception for dividing by 0
         }
 
