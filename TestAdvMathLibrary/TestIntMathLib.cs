@@ -1,4 +1,4 @@
-using System;
+
 using AdvancedMathLibrary;
 using Xunit;
 
@@ -7,7 +7,8 @@ namespace TestAdvMathLibrary {
 
         [Fact]
         public void TestAbsoluteValue() {   //test methods ALWAYS return void w/no parameters
-            Math.AbsoluteValue
+            int answer = Math.AbsoluteValue(-3);
+            Assert.Equal(3, answer);
         }
     }
 }
